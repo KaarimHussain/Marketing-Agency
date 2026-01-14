@@ -4,6 +4,7 @@ import Work from "./components/home/Work";
 import Solutions from "./components/home/Solutions";
 import Pricing from "./components/home/Pricing";
 import Stats from "./components/home/Stats";
+import Testimonials from "./components/home/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Solutions />
       <Pricing />
       <Stats />
+      <Testimonials />
     </>
   );
 }

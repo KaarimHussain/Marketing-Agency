@@ -48,7 +48,7 @@ export default function Testimonials() {
     };
 
     return (
-        <section className="bg-black text-white py-24 px-4 md:px-8 overflow-hidden">
+        <section className="bg-white text-black py-24 px-4 md:px-8 overflow-hidden">
             <div className="max-w-4xl mx-auto flex flex-col items-center gap-16">
 
                 {/* Header */}
@@ -66,9 +66,9 @@ export default function Testimonials() {
 
                     {/* Background Decorative Cards (The Stack Effect) */}
                     {/* Layer 2 (Bottom) */}
-                    <div className="absolute w-[95%] h-full bg-[#1A1A1A] rounded-[2.5rem] rotate-[-6deg] translate-y-4 md:translate-x-[-20px] opacity-60 z-0"></div>
+                    <div className="absolute w-[95%] h-full bg-[#1A1A1A] rounded-[2.5rem] -rotate-6 translate-y-4 md:translate-x-[-20px] opacity-60 z-0"></div>
                     {/* Layer 1 (Middle) */}
-                    <div className="absolute w-[98%] h-full bg-primary rounded-[2.5rem] rotate-[-3deg] translate-y-2 md:translate-x-[-10px] z-0"></div>
+                    <div className="absolute w-[98%] h-full bg-primary rounded-[2.5rem] -rotate-3 translate-y-2 md:translate-x-[-10px] z-0"></div>
 
                     {/* Active Card Container */}
                     <div className="relative w-full h-full z-10">
