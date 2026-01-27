@@ -1,8 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vesol Marketing Website
 
-## Getting Started
+A high-performance, design-forward marketing agency website built with the latest modern web technologies. This project showcases premium design aesthetics, complex animations, and a seamless user experience.
 
-First, run the development server:
+![Project Preview](public/Hero.png)
+<!-- _(Note: Add a screenshot of the hero section here)_ -->
+
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (Alpha)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Font**: Inter & Playfair Display
+- **Layouts**: Masonry Grids, Bento Grids
+
+## ✨ Key Features
+
+- **Modern Design System**: Immersive dark mode, glassmorphism effects, and "OKLCH" color spaces.
+- **Pages Implemented**:
+  - **Home**: High-impact hero, services overview.
+  - **About Us**: agency story, values bento grid, and team roster.
+  - **Our Work**: Interactive project gallery with filtering and category switching.
+  - **Pricing**: Transparent pricing tiers with monthly/yearly toggles.
+  - **Testimonials**: "Wall of Love" masonry grid mixing reviews, tweets, and highlights.
+  - **Contact**: Split-screen layout with an interactive inquiry form.
+- **Performance**: Optimized for core web vitals and fast transitions.
+
+## 📂 Project Structure
+
+```bash
+├── app/
+│   ├── about/          # About Us page
+│   ├── contact/        # Contact page
+│   ├── our-work/       # Portfolio/Work page
+│   ├── pricing/        # Pricing & Plans page
+│   ├── testimonials/   # Customer success stories
+│   ├── components/     # Reusable UI components
+│   │   ├── about/      # About-specific components
+│   │   ├── contact/    # Contact-specific components
+│   │   ├── pricing/    # Pricing-specific components
+│   │   ├── testimonials/# Testimonial components
+│   │   ├── work/       # Work-specific components
+│   │   └── ui/         # Generic UI elements (Buttons, Inputs, etc.)
+│   ├── fonts/          # Local font assets
+│   ├── globals.css     # Global styles & Tailwind config
+│   └── layout.tsx      # Root layout (Navbar, Footer)
+└── public/             # Static assets
+```
+
+## 🛠️ Getting Started
+
+First, clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/KaarimHussain/Marketing-Agency.git
+cd Marketing-Agency
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +73,17 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Colors
 
-## Learn More
+This project uses **OKLCH** color spaces defined in `app/globals.css`. You can adjust the `primary`, `secondary`, and `muted` variables to change the brand theme globally.
 
-To learn more about Next.js, take a look at the following resources:
+### Animations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Animations are handled by `framer-motion`. Check individual components (like `PricingPlans.tsx` or `ReviewsGrid.tsx`) to tweak entrance effects and transitions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2025 Vesol Marketing. All rights reserved.
+Design & Developed by Vesol Marketing.
