@@ -5,6 +5,7 @@ import Solutions from "./components/home/Solutions";
 import Pricing from "./components/home/Pricing";
 import Stats from "./components/home/Stats";
 import Testimonials from "./components/home/Testimonials";
+import Blogs from "./components/home/Blogs";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Pricing />
       <Stats />
       <Testimonials />
+      <Blogs />
     </>
   );
 }

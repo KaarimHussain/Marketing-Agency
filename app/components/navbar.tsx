@@ -6,9 +6,18 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 
+
+
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const navLinks = [
+        { name: "About Us", href: "/about" },
+        { name: "Our Work", href: "/our-work" },
+        { name: "Pricing", href: "/pricing" },
+        { name: "Testimonials", href: "/testimonials" },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,7 +39,7 @@ export default function Navbar() {
                     initial={{ width: "90%", borderRadius: "1rem", padding: "1.25rem" }}
                     animate={{
                         width: isScrolled ? "100%" : "90%", // Mobile default to 90%, expand to 100%
-                        maxWidth: isScrolled ? "100%" : "64rem", // 64rem is roughly max-w-5xl
+                        maxWidth: isScrolled ? "100%" : "70rem", // 64rem is roughly max-w-5xl
                         borderRadius: isScrolled ? "0px" : "12px",
                         y: isScrolled ? (typeof window !== 'undefined' && window.innerWidth >= 1024 ? -20 : -8) : 0, // Remove the top margin visually by moving up
                         padding: "1rem 1.5rem", // Consistent padding
@@ -44,22 +53,21 @@ export default function Navbar() {
                         {/* Left: Logo */}
                         <div className="flex items-center justify-start">
                             <Link href="/" className="flex items-center gap-2 group">
-                                <div className="size-4 bg-primary rounded-sm group-hover:rotate-45 transition-transform duration-300" />
                                 <span className={`text-xl font-bold tracking-tight ${isScrolled ? "text-primary" : "text-white"}`}>
-                                    Markeio
+                                    VESOL MARKETING
                                 </span>
                             </Link>
                         </div>
 
                         {/* Center: Desktop Links */}
                         <div className="hidden md:flex items-center justify-center gap-8">
-                            {["Company", "Work", "Pricing", "Resources"].map((item) => (
+                            {navLinks.map((item) => (
                                 <Link
-                                    key={item}
-                                    href={`/${item.toLowerCase()}`}
-                                    className={`text-sm font-medium text-muted-foreground transition-colors ${isScrolled ? "text-black hover:text-primary" : "text-white hover:text-white/70"}`}
+                                    key={item.name}
+                                    href={item.href}
+                                    className={`text-nowrap text-sm font-medium text-muted-foreground transition-colors ${isScrolled ? "text-black hover:text-primary" : "text-white hover:text-white/70"}`}
                                 >
-                                    {item}
+                                    {item.name}
                                 </Link>
                             ))}
                         </div>
@@ -67,9 +75,11 @@ export default function Navbar() {
                         {/* Right: Actions */}
                         <div className="flex items-center justify-end gap-4">
                             {/* Contact Button */}
-                            <Button className={`hidden md:flex ${isScrolled ? "bg-primary text-white hover:bg-primary/80" : "bg-white text-black hover:bg-gray-200 hover:text-black font-bold h-9 px-6"}`}>
-                                CONTACT NOW
-                            </Button>
+                            <Link href="/contact">
+                                <Button className={`hidden md:flex ${isScrolled ? "bg-primary text-white hover:bg-primary/80" : "bg-white text-black hover:bg-gray-200 hover:text-black font-bold h-9 px-6"}`}>
+                                    CONTACT NOW
+                                </Button>
+                            </Link>
 
                             {/* Mobile Menu Toggle */}
                             <button
@@ -110,9 +120,11 @@ export default function Navbar() {
                                 </span>
                                 <span className="text-sm font-semibold text-white">Available for Work</span>
                             </div>
-                            <Button className="w-full max-w-xs bg-white text-black hover:bg-gray-200 font-bold mt-4" onClick={() => setIsMobileMenuOpen(false)}>
-                                CONTACT NOW
-                            </Button>
+                            <Link href="/contact">
+                                <Button className="w-full max-w-xs bg-white text-black hover:bg-gray-200 font-bold mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+                                    CONTACT NOW
+                                </Button>
+                            </Link>
                         </div>
                     </motion.div>
                 )}
