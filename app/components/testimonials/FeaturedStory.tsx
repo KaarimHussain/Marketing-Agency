@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export default function FeaturedStory() {
     return (
-        <section className="py-24 bg-black text-white relative">
-            <div className="container px-4 md:px-6 mx-auto">
+        <section className="py-32 bg-black text-white relative border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function FeaturedStory() {
                                     </div>
                                 </div>
                                 <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                                    "Arham Marketing didn't just run ads; they completely re-engineered our go-to-market strategy. The results were immediate and transformative."
+                                    "Vesol Marketing didn't just run ads; they completely re-engineered our go-to-market strategy. The results were immediate and transformative."
                                 </h2>
                                 <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                                     Within 90 days, we saw a 200% increase in qualified leads and a 40% reduction in CAC. Their team operates as a true extension of our own.

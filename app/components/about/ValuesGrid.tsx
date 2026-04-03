@@ -38,11 +38,12 @@ const utilities = [
 
 export default function ValuesGrid() {
     return (
-        <section className="py-24 bg-black text-white">
-            <div className="container px-4 md:px-6 mx-auto">
-                <div className="flex flex-col items-center text-center mb-16 space-y-4">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Our Core Values</h2>
-                    <p className="text-muted-foreground max-w-2xl text-lg">The principles that guide every strategy, design, and line of code we write.</p>
+        <section className="py-32 bg-black text-white border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
+                <div className="flex flex-col items-center text-center mb-24 space-y-4">
+                    <span className="text-primary text-[10px] font-black tracking-[0.4em] uppercase">OUR PRINCIPLES</span>
+                    <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase">Our Core Values</h2>
+                    <p className="text-muted-foreground max-w-2xl text-lg md:text-xl">The principles that guide every strategy, design, and line of code we write.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 max-w-5xl mx-auto h-auto md:h-[500px]">

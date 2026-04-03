@@ -17,7 +17,7 @@ const testimonials = [
         type: "tweet",
         name: "Elena Rodriguez",
         handle: "@elenadesign",
-        content: "Just saw the new campaign from Arham Marketing. Honestly? Blown away. The animation quality is next level. 🚀",
+        content: "Just saw the new campaign from Vesol Marketing. Honestly? Blown away. The animation quality is next level. 🚀",
         date: "2h ago",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop",
     },
@@ -25,7 +25,7 @@ const testimonials = [
         type: "review",
         name: "Marcus Chen",
         role: "CTO, NexusStream",
-        content: "We've worked with three other agencies before. Arham is the first one to actually deliver on their ROI promises. The data speaks for itself.",
+        content: "We've worked with three other agencies before. Vesol is the first one to actually deliver on their ROI promises. The data speaks for itself.",
         image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop",
         rating: 5,
     },
@@ -46,7 +46,7 @@ const testimonials = [
         type: "tweet",
         name: "David Kim",
         handle: "@dkim_dev",
-        content: "Working with the Arham team has been a breath of fresh air. No corporate jargon, just straight talk and great work. 💯",
+        content: "Working with the Vesol team has been a breath of fresh air. No corporate jargon, just straight talk and great work. 💯",
         date: "5h ago",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop",
     },
@@ -78,11 +78,12 @@ const testimonials = [
 
 export default function ReviewsGrid() {
     return (
-        <section className="py-24 bg-black text-white">
-            <div className="container px-4 md:px-6 mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Wall of Love</h2>
-                    <p className="text-muted-foreground">What people are saying across the web.</p>
+        <section className="py-32 bg-black text-white border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
+                <div className="text-center mb-24 space-y-4">
+                    <span className="text-primary text-[10px] font-black tracking-[0.4em] uppercase">TESTIMONIALS</span>
+                    <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase">Wall of Love</h2>
+                    <p className="text-muted-foreground text-lg md:text-xl">What people are saying across the web.</p>
                 </div>
 
                 <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">

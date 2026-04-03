@@ -27,31 +27,10 @@ const services = [
     },
 ];
 
-const brandLogos = [1, 2, 3, 4, 5, 6]; // Placeholders for looping
-
 export default function Solutions() {
     return (
         <section className="w-full bg-black py-20 px-4 md:px-8 overflow-hidden">
             <div className="max-w-7xl mx-auto flex flex-col gap-20">
-
-                {/* Trusted By Strip */}
-                <div className="flex flex-col items-center gap-8">
-                    <div className="flex items-center gap-2">
-                        <div className="h-2 w-2 bg-primary"></div>
-                        <span className="text-secondary text-sm font-semibold tracking-widest uppercase">
-                            Trusted by leading brands
-                        </span>
-                    </div>
-                    <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50">
-                        {/* Simple Text Placeholders for Logos matching the style */}
-                        {brandLogos.map((i) => (
-                            <div key={i} className="text-xl font-bold text-white flex items-center gap-2">
-                                <div className="h-6 w-6 bg-white/20 rounded-full" />
-                                <span>Logoipsum</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
 
                 {/* Header Section */}
                 <div className="flex flex-col lg:flex-row items-end justify-between gap-8">

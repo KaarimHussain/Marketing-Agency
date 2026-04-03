@@ -31,14 +31,15 @@ export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-24 bg-zinc-950 text-white">
-            <div className="container px-4 md:px-6 mx-auto max-w-3xl">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Frequently Asked Questions</h2>
-                    <p className="text-muted-foreground">Everything you need to know about working with us.</p>
+        <section className="py-32 bg-zinc-950 text-white border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
+                <div className="text-center mb-24 space-y-4">
+                    <span className="text-primary text-[10px] font-black tracking-[0.4em] uppercase">QUESTIONS?</span>
+                    <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase">Frequently Asked Questions</h2>
+                    <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto">Everything you need to know about working with us.</p>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-4 max-w-3xl mx-auto">
                     {faqs.map((faq, i) => (
                         <motion.div
                             key={i}

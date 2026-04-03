@@ -63,8 +63,8 @@ export default function ProjectGallery() {
         : projects.filter(project => project.category === activeFilter);
 
     return (
-        <section className="py-24 bg-black min-h-screen">
-            <div className="container px-4 md:px-6 mx-auto">
+        <section className="py-32 bg-black min-h-screen border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
                 {/* Filter Bar */}
                 <div className="flex flex-wrap justify-center gap-4 mb-16">
                     {filters.map((filter) => (

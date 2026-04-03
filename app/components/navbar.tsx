@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -13,6 +14,7 @@ export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const navLinks = [
+        { name: "Services", href: "/services" },
         { name: "About Us", href: "/about" },
         { name: "Our Work", href: "/our-work" },
         { name: "Pricing", href: "/pricing" },
@@ -53,9 +55,14 @@ export default function Navbar() {
                         {/* Left: Logo */}
                         <div className="flex items-center justify-start">
                             <Link href="/" className="flex items-center gap-2 group">
-                                <span className={`text-xl font-bold tracking-tight ${isScrolled ? "text-primary" : "text-white"}`}>
-                                    VESOL MARKETING
-                                </span>
+                                <Image
+                                    src="/Logo.png"
+                                    alt="Vesol Marketing Logo"
+                                    width={100}
+                                    height={100}
+                                    className="h-12 w-auto object-contain"
+                                    priority
+                                />
                             </Link>
                         </div>
 

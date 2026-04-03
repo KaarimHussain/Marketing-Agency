@@ -33,11 +33,12 @@ const team = [
 
 export default function Team() {
     return (
-        <section className="py-24 bg-zinc-950 text-white">
-            <div className="container px-4 md:px-6 mx-auto">
-                <div className="flex flex-col items-center text-center mb-16 space-y-4">
-                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Meet The Minds</h2>
-                    <p className="text-muted-foreground max-w-2xl text-lg">
+        <section className="py-32 bg-zinc-950 text-white border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
+                <div className="flex flex-col items-center text-center mb-24 space-y-4">
+                    <span className="text-primary text-[10px] font-black tracking-[0.4em] uppercase">OUR TEAM</span>
+                    <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase">Meet The Minds</h2>
+                    <p className="text-muted-foreground max-w-2xl text-lg md:text-xl">
                         The talented individuals driving innovation and success for our clients.
                     </p>
                 </div>

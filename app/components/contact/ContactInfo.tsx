@@ -7,8 +7,8 @@ const contactDetails = [
     {
         icon: <Mail className="w-6 h-6 text-primary" />,
         title: "Email",
-        value: "hello@arhammarketing.com",
-        link: "mailto:hello@arhammarketing.com"
+        value: "hello@vesol.com",
+        link: "mailto:hello@vesol.com"
     },
     {
         icon: <Phone className="w-6 h-6 text-primary" />,

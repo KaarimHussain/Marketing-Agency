@@ -4,10 +4,10 @@ import ContactInfo from "../components/contact/ContactInfo";
 
 export default function ContactPage() {
     return (
-        <main className="min-h-screen bg-black text-white">
+        <main className="min-h-screen bg-black text-white pt-10 ">
             <ContactHero />
 
-            <section className="py-24 relative overflow-hidden">
+            <section className="py-24 relative overflow-hidden mt-20">
                 {/* Background decoration */}
                 <div className="absolute top-1/2 left-0 w-full h-[500px] bg-primary/5 blur-[120px] pointer-events-none -translate-y-1/2" />
 

@@ -54,10 +54,10 @@ export default function PricingPlans() {
     const [isYearly, setIsYearly] = useState(false);
 
     return (
-        <section className="py-24 bg-black text-white relative">
+        <section className="py-32 bg-black text-white relative border-t border-white/5">
             <div className="absolute inset-x-0 top-0 h-40 bg-linear-to-b from-primary/5 to-transparent pointer-events-none" />
 
-            <div className="container px-4 md:px-6 mx-auto">
+            <div className="max-w-7xl mx-auto px-4 md:px-8">
                 {/* Billing Toggle */}
                 <div className="flex justify-center mb-16">
                     <div className="bg-zinc-900 p-1 rounded-full flex items-center relative">
